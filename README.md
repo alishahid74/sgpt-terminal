@@ -1,6 +1,6 @@
 # SGPT Terminal (Your Personal ShellGPT)
 
-A friendly, safety‑aware inspired by EC‑Council’s SGPT. Use it to generate commands and script.
+A friendly, safety‑aware terminal copilot inspired by EC‑Council’s SGPT. Use it to generate commands and script.
 
 ## Highlights
 note = """\n> ⚠️ **Note:** If you use `--backend ollama --model llama3`, responses may take longer because it runs locally (CPU-only if no GPU).  
