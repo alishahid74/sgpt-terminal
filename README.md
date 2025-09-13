@@ -3,11 +3,11 @@
 A friendly, safety‑aware terminal copilot inspired by EC‑Council’s SGPT. Use it to generate commands and script.
 
 ## Highlights
-note = """\n> ⚠️ **Note:** If you use `--backend ollama --model llama3`, responses may take longer because it runs locally (CPU-only if no GPU).  
---> **For faster results, it’s recommended to use **OpenAI’s `gpt-4o-mini`** when available.\n"""
---> **Two backends:** OpenAI (cloud) or **Ollama** (local/offline).
---> **Modes:** `default`, `bash`, `powershell`,
---> **Safe by default:** Prints commands and rationale — execution only happens if you pass `--exec`.  
+⚠️ Note: If you use `--backend ollama --model llama3`, responses may take longer because it runs locally (CPU-only if no GPU).  
+--> For faster results, it’s recommended to use OpenAI’s `gpt-4o-mini` when available.\n"""
+--> Two backends: OpenAI (cloud) or Ollama (local/offline).
+--> Modes: `default`, `bash`, `powershell`,
+--> Safe by default: Prints commands and rationale — execution only happens if you pass `--exec`.  
 
 ---
 
@@ -26,13 +26,13 @@ installs dependencies
 places a launcher sgpt in ~/.local/bin
 Make sure ~/.local/bin is on your PATH.
 
-**OpenAI (cloud)**  
+OpenAI (cloud)  
 ```bash
 get your API key here is the linked. https://platform.openai.com/docs/overview
 echo 'OPENAI_API_KEY=sk-...yourkey...' > ~/.config/sgpt-terminal/.env
 ```
 
-**Ollama (local)**  
+Ollama (local)  
 1. Install and run Ollama (https://ollama.com).  
 2. Pull a model, e.g. `ollama pull llama3`.  
 3. No API key needed—change backend via `--backend ollama`.
