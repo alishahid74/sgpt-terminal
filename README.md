@@ -14,7 +14,7 @@ note = """\n> ⚠️ **Note:** If you use `--backend ollama --model llama3`, res
 ## 🚀 Quick Install (Linux)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/sgpt-terminal.git
+git clone https://github.com/alishahid74/sgpt-terminal.git
 cd sgpt-terminal
 bash install.sh
 
