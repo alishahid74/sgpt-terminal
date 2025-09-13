@@ -20,7 +20,6 @@ bash install.sh
 
 ### Configure API (choose one)
 
-This:
 installs into ~/.local/share/sgpt-terminal
 creates a venv
 installs dependencies
@@ -43,9 +42,9 @@ echo 'OPENAI_API_KEY=sk-...yourkey...' > ~/.config/sgpt-terminal/.env
 ## Usage
 
 ```bash
-sgpt -m bash "find open TCP ports with nmap"
-sgpt -m powershell "get top 5 processes by memory with comments"
-sgpt -m bash --file artifacts.txt "craft a grep to extract IOC list"
+sgpt -m bash "find open TCP ports with nmap" --exec
+sgpt -m powershell "get top 5 processes by memory with comments" --exec
+sgpt -m bash --file artifacts.txt "craft a grep to extract IOC list" --exec
 ```
 
 ### Switch backend/model
@@ -56,7 +55,7 @@ sgpt -b ollama --model llama3 -m bash "awk to extract 2nd column"
 
 ### Minimal output
 ```bash
-sgpt -q -m bash "one-liner to hash all files under /evidence"
+sgpt -m bash "one-liner to hash all files under /evidence" --exec
 ```
 
 ---
