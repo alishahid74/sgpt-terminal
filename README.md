@@ -1,10 +1,10 @@
 # SGPT Terminal (Your Personal ShellGPT)
 
-A friendly, safety‑aware terminal copilot inspired by EC‑Council’s SGPT. Use it to generate commands and script.
+A friendly, safety‑aware terminal copilot inspired by EC‑Council’s SGPT. Use it to generate commands and scripts.
 
 ## Highlights
-⚠️ Note: If you use `--backend ollama --model llama3`, responses may take longer because it runs locally (CPU-only if no GPU).  
---> For faster results, it’s recommended to use OpenAI’s `gpt-4o-mini` when available.\n"""
+⚠️ Note: If you use `--backend ollama --model llama3', responses may take longer because it runs locally (CPU-only if no GPU).  
+--> For faster results, it’s recommended to use OpenAI’s `gpt-4o-mini` when available.
 --> Two backends: OpenAI (cloud) or Ollama (local/offline).
 --> Modes: `default`, `bash`, `powershell`,
 --> Safe by default: Prints commands and rationale — execution only happens if you pass `--exec`.  
@@ -32,7 +32,7 @@ Make sure ~/.local/bin is on your PATH.
 
 OpenAI (cloud)  
 ```bash
-get your API key here is the linked. https://platform.openai.com/docs/overview
+Get your API key from this link: https://platform.openai.com/docs/overview
 echo 'OPENAI_API_KEY=sk-...yourkey...' > ~/.config/sgpt-terminal/.env
 ```
 
