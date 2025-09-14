@@ -18,6 +18,10 @@ git clone https://github.com/alishahid74/sgpt-terminal.git
 cd sgpt-terminal
 bash install.sh
 
+After completing the clone part, please run these commands.
+
+mkdir sgpt_terminal | mv backend.py cli.py modes.py __init__.py sgpt_terminal
+
 ### Configure API (choose one)
 
 installs into ~/.local/share/sgpt-terminal
