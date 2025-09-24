@@ -3,11 +3,12 @@
 A friendly, safety‑aware terminal copilot inspired by EC‑Council’s SGPT. Use it to generate commands and scripts.
 
 ## Highlights
-⚠️ Note: If you use `--backend ollama --model llama3', responses may take longer because it runs locally (CPU-only if no GPU).  
---> For faster results, it’s recommended to use OpenAI’s `gpt-4o-mini` when available.
---> Two backends: OpenAI (cloud) or Ollama (local/offline).
---> Modes: `default`, `bash`, `powershell`,
---> Safe by default: Prints commands and rationale — execution only happens if you pass `--exec`.  
+⚠️ Two backends:
+--> OpenAI (cloud) → Fast responses (e.g., gpt-4o-mini)
+--> Ollama (local/offline) → Run models locally (tinyllama, llama3:8b)
+    ✅ Tinyllama works even in low-RAM (4 GB). ⚠️ llama3:8b requires 8 GB+ RAM.
+Modes: default, bash, powershell
+Safe by default: Prints commands and rationale — execution only happens if you pass --exec.  
 
 ---
 
@@ -18,7 +19,7 @@ git clone https://github.com/alishahid74/sgpt-terminal.git
 cd sgpt-terminal
 bash install.sh
 
-After completing the clone part, please run these commands.
+After installation, please run these commands.
 
 mkdir sgpt_terminal | mv backend.py cli.py modes.py __init__.py sgpt_terminal
 
@@ -49,7 +50,9 @@ Ollama (local)
 sgpt -m bash "find open TCP ports with nmap" --exec
 sgpt -m powershell "get top 5 processes by memory with comments" --exec
 sgpt -m bash --file artifacts.txt "craft a grep to extract IOC list" --exec
+sgpt -b ollama --model tinyllama "awk to extract 2nd column"
 ```
+
 
 ### Switch backend/model
 ```bash
